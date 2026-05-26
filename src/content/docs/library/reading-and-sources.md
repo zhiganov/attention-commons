@@ -11,7 +11,7 @@ These are not comprehensive bibliographies. They are the sources that have most 
 
 - **Elinor Ostrom** — *Governing the Commons* (1990). The foundational empirical argument that commons governance is a viable third way beyond market and state. Her eight design principles for long-enduring commons are the structural reference for thinking about attention communities.
 
-- **David Bollier** — *Think Like a Commoner* (2nd ed., released to open access); *Free, Fair and Alive* (with Silke Helfrich); *Patterns of Commoning*. Bollier's key contribution: commoning is a *social practice* and a process of becoming, not just a resource-management technique. A [Think Like a Commoner MCP server](https://github.com/zhiganov/think-like-a-commoner-mcp) makes the book conversationally accessible.
+- **David Bollier** — *Think Like a Commoner* (2nd ed., released to open access); *Free, Fair and Alive*; *Patterns of Commoning*. Bollier's key contribution: commoning is a *social practice* and a process of becoming, not just a resource-management technique. A [Think Like a Commoner MCP server](https://github.com/zhiganov/think-like-a-commoner-mcp) makes the book conversationally accessible.
 
 - **P2P Foundation** — [Four Future P2P Scenarios](https://wiki.p2pfoundation.net/Four_Future_P2P_Scenarios) and [Resilient Communities](https://wiki.p2pfoundation.net/Resilient_Communities) (Michel Bauwens and collaborators). Transnational "phyles" — alliances of ethical enterprises around a shared knowledge commons — as a governance reference. Wikipedia cited as one of the most successful global knowledge commons.
 
