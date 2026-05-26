@@ -10,6 +10,15 @@ A public **knowledge commons / wiki** for Attention Commons — a browsable, con
 
 Not (in v1): a marketing landing page, a community/membership hub, or a live multi-user wiki app.
 
+## Domain emphasis & context
+
+This is, in a big way, about **meditation and contemplative traditions** and about **integral theory** — these are core substance, not flavour:
+
+- The **Practices** and **The idea** sections must carry real contemplative depth (lineages, transmission, the science and phenomenology of attention), not generic "mindfulness" framing. The "wisdom about attention held as a commons" claim only lands if the contemplative material is treated seriously.
+- **Integral theory (Ken Wilber)** is a core lens — the four-quadrant map is the project's strategic backbone, so the "Map & strategy" and "The idea" pages should be integral-literate.
+- **Viktor Shiryaev** — a student of **Shinzen Young** and one of the best-known meditation teachers in Russia and Ukraine — is the contemplative authority behind this work. His standing/bio is a public, usable asset (credibility, About/fellow-travellers framing); his *authored writing* still falls under guardrail #1 (no publishing without sign-off).
+- **More materials are coming** from Artem/Viktor (sources, practices, references). The plan must treat content as incremental: structure and stubs first, with pages filled as materials arrive — don't block the build on having every page fully written.
+
 ## Stack
 
 - **Astro + [Starlight](https://github.com/withastro/starlight)** — Astro's official documentation/knowledge-base framework. Chosen because it ships the wiki UX out of the box: left-sidebar navigation, built-in full-text search (Pagefind), Markdown/MDX content, and automatic "Edit this page on GitHub" links.
