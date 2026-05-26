@@ -1,1 +1,79 @@
-/* Attention Commons theme overrides — populated in the frontend-design pass (later task). */
+/* Attention Commons — literary / press-editorial theme.
+   Tokens follow DESIGN.md. Restrained colour, serif-led, warm paper & ink. */
+
+/* Self-hosted fonts (no external requests) */
+@import '@fontsource-variable/source-serif-4';
+@import '@fontsource/ibm-plex-mono/400.css';
+
+:root {
+  /* Serif-led typography. Furniture falls back to Starlight's system sans. */
+  --sl-font: 'Source Serif 4 Variable', Georgia, 'Times New Roman', serif;
+  --sl-font-mono: 'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace;
+
+  /* Reading measure (~70ch of serif) */
+  --sl-content-width: 46rem;
+
+  /* Dark mode — warm evening reading, not blue-black */
+  --sl-color-bg: oklch(0.215 0.008 80);
+  --sl-color-bg-nav: oklch(0.255 0.009 80);
+  --sl-color-bg-sidebar: oklch(0.255 0.009 80);
+  --sl-color-text: oklch(0.92 0.006 85);
+  --sl-color-text-accent: oklch(0.78 0.075 155);
+  --sl-color-accent: oklch(0.78 0.075 155);
+  --sl-color-accent-low: oklch(0.33 0.04 155);
+  --sl-color-accent-high: oklch(0.9 0.04 155);
+  --sl-color-hairline: oklch(0.34 0.009 80);
+  --sl-color-hairline-light: oklch(0.34 0.009 80);
+}
+
+:root[data-theme='light'] {
+  /* Light mode — warm paper & ink */
+  --sl-color-bg: oklch(0.985 0.006 85);
+  --sl-color-bg-nav: oklch(0.965 0.007 85);
+  --sl-color-bg-sidebar: oklch(0.965 0.007 85);
+  --sl-color-text: oklch(0.265 0.012 85);
+  --sl-color-text-accent: oklch(0.46 0.062 155);
+  --sl-color-accent: oklch(0.46 0.062 155);
+  --sl-color-accent-low: oklch(0.95 0.02 155);
+  --sl-color-accent-high: oklch(0.34 0.05 155);
+  --sl-color-hairline: oklch(0.9 0.008 85);
+  --sl-color-hairline-light: oklch(0.9 0.008 85);
+}
+
+/* Furniture (navigation, title, TOC) stays in a quiet sans so small text is
+   crisp and the serif is reserved for reading. */
+.site-title,
+nav.sidebar,
+.sidebar-content,
+.right-sidebar,
+mobile-starlight-toc,
+.pagination-links a > span {
+  font-family: var(--sl-font-system);
+}
+
+/* Comfortable reading rhythm for content */
+.sl-markdown-content {
+  line-height: 1.75;
+}
+.sl-markdown-content a {
+  text-underline-offset: 0.18em;
+}
+
+/* Asides: replace Starlight's left-stripe border (a banned side-stripe) with a
+   full hairline border + soft radius. Keeps the leading icon and accent text. */
+.starlight-aside {
+  border: 1px solid var(--sl-color-asides-border);
+  border-inline-start-width: 1px;
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+}
+
+/* Motion: minimal, ease-out, and disabled entirely when requested */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
