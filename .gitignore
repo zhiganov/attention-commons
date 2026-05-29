@@ -19,3 +19,8 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+# local-only session process notes (not for public repo)
+docs/process-notes.md
+# local-only private notes (people, pipeline, anything not for public repo)
+docs/private-notes.md
